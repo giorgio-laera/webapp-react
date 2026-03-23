@@ -1,0 +1,16 @@
+
+/* :root {
+  --colore-principale: #3498db;
+  --spaziatura-base: 16px;
+} */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: black;
+    background-color: #333333;
+}
+
+a{
+    text-decoration: none;
+}
