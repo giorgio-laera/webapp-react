@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-function DetailsPage() {
+function MovieDetailsPage() {
   return (
     <div>
       <h1>Details Page</h1>
@@ -7,5 +7,5 @@ function DetailsPage() {
     </div>
   );
 }
-export default DetailsPage;
+export default MovieDetailsPage;
 

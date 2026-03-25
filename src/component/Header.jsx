@@ -3,8 +3,9 @@ import style from "../modules/Header.module.css"
 function Header(){
     return (
         <header className={style.Header}>
+            <img src="icon.png" alt="" />
             <NavLink to="/">Home Page</NavLink>
-            <NavLink to="/books">Books</NavLink>
+            <NavLink to="/movies">Movies</NavLink>
         </header>
     )
 }

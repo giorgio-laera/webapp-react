@@ -4,6 +4,8 @@
 .Header{
     padding: 1rem;
     background-color: var(--primary-color);
+    display: flex;
+     align-items: center;
     
 }
 .Header *{
@@ -11,6 +13,10 @@
     background-color: var(--primary-color);
     
 } 
+.Header img{
+    width: 3.5rem;
+    padding: 0;
+}
 .Header :global(.active){
     color: greenyellow;
 text-decoration: underline;

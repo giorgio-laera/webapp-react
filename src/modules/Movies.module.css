@@ -1,0 +1,17 @@
+
+.movies{
+    padding: 1rem;
+    
+}
+.movies h1{
+    color: orange;
+}
+.movies a{
+    color:rgb(202, 132, 0);
+}
+.movies .card{
+    width: 5rem;
+}
+.movies .card img{
+width: 100%;
+}
