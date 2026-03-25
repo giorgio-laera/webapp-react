@@ -14,3 +14,10 @@
 a{
     text-decoration: none;
 }
+.d-flex{
+  display: flex;
+}
+.movieCard-Container{
+  margin: 1rem;
+  
+}
