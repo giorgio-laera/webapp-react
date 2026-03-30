@@ -1,7 +1,7 @@
 import { Link, useParams } from "react-router-dom";
 import { useState, useEffect } from "react";
 import ReviewsCard from "../component/ReviewsCard";
-import ReviewsForm from "../component/ReviewsForm";
+import ReviewsForm from "../component/ReviewsForm"
 
 import axios from "axios";
 
@@ -12,12 +12,17 @@ function MovieDetailsPage() {
   const [reviews, setReviews] = useState([]);
   const apiUrl= `http://localhost:3000/api/movies/${id}`
 
-  useEffect(() => {
-    axios.get(apiUrl).then(respose => {
+function getMovieData(){
+  axios.get(apiUrl).then(respose => {
       console.log(respose.data)
       setReviews(respose.data);
     }).catch(error => { console.error(error.message) })
-  },[]);
+}
+  useEffect(() => {
+
+    getMovieData();
+  
+  },[id]);
   return (
     <div>
 
@@ -30,7 +35,7 @@ function MovieDetailsPage() {
 
       <h2>aggungei una recenzione</h2>
 
-      <ReviewsForm />
+      <ReviewsForm onNewReview={getMovieData}/>
     </div>
   )
 }
