@@ -9,11 +9,11 @@ function reviewsCard ({review}){
         <div className={` ${style.card}`}>
             <h4>{name}</h4>
             <div>
-               {vote >= 1 ? <IoStar /> : <IoStarOutline />}
-               {vote >= 2 ? <IoStar /> : <IoStarOutline />}
-               {vote >= 3 ? <IoStar /> : <IoStarOutline />}
-               {vote >= 4 ? <IoStar /> : <IoStarOutline />}
-               {vote == 5 ? <IoStar /> : <IoStarOutline />}
+                { [1,2,3,4,5].map((element, i)=>{
+                    return vote >= element ? <IoStar key={i}/> : <IoStarOutline key={i}/>
+                })
+                }
+              
             </div>
             {/* <span>{vote}</span> */}
 
